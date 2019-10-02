@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+body {line-height: 1.5em;font-size: 16px;font-weight:200;min-width:380px;}
+
+.mts-basewrap {padding-left:10px !important;padding-right:10px !important;}
+
+.mts-logo a {font-size:20px !important;}
+
+.mts-header .header-top  {height:56px;line-height:46px;}
+
+.mts-menu-icon {width:56px !important;height:56px !important;}
+
+.mts-menu-trading > ul > li > a {padding:7px 0 !important;}
+
+
+.mts-menu .wrapper {top:56px !important;width:270px !important;}
+.mts-menu .close {height:56px !important;width:56px !important;}
+
+.mts-menu nav > ul > li > a  {padding:15px 20px 15px 40px !important;background-size:12px auto !important;background-position:19px center !important;}
+.mts-menu nav > ul > li > em  {right:20px !important;top:17px !important;padding:2px 0 !important;width:40px !important;}
+
+
+.mts-menu .stat {padding:20px !important;}
+.mts-menu .stat > p > em {width:70px !important;}
+
+.mts-trading-wrapper .selector {height:38px !important;line-height:35px !important;}
+.mts-trading-wrapper .selector .btn  {width:100px !important;padding-right:23px !important;background-position:86% 10px !important;background-size:15px auto !important;}
+
+.mts-trading-wrapper .selector .select  {top:37px !important;}
+
+.mts-trading-wrapper .stock-list > ul > li > .it.middle {width:180px !important;margin-left:-90px !important;}
+
+.mts-trading-wrapper .order-tab .tab {padding-top:5px !important;padding-bottom:5px !important;}
+
+.mts-trading-wrapper .order-wrapper .hogatime {padding:6px 0 !important;}
+
+.mts-trading-wrapper .hoga-list > ul > li {padding:6px 10px !important;}
+
+.mts-trading-wrapper .fld {height:38px !important;line-height:32px !important;margin-bottom:8px !important;}
+.mts-trading-wrapper .fld .sel {right:37px !important;}
+.mts-trading-wrapper .fld label {line-height:33px !important;}
+.mts-trading-wrapper .fld .input {padding-right:88px !important;}
+
+.mts-trading-wrapper .fld .input.nobtn {padding-right:10px !important;}
+.mts-trading-wrapper .fld .input.nolabel {padding-left:10px !important;}
+
+.mts-trading-wrapper .fld .btn {width:38px !important;background-size:13px auto !important;}
+.mts-trading-wrapper .fld .btn.left {margin-right:37px !important;}
+
+.mts-trading-wrapper .button {padding:6px 10px !important;}
+.mts-trading-wrapper .button.nobtn {margin:2px 0;}
+
+.mts-trading-wrapper .order .stats {margin-bottom:10px !important;}
+.mts-trading-wrapper .order .stats .stat {top:7px !important;}
+
+
+.mts-trading-wrapper .selector.option .fix-header  {left:11px !important;right:11px !important;top:148px !important;height:60px;padding:10px;padding-bottom:0;line-height:18px !important;}
+
+.mts-footer .info .icon {margin-top:-24px !important;width:48px !important;height:48px !important;}
+.mts-footer .contact .tel {background-size:20px auto !important;padding-left:35px !important;}
+.mts-footer .contact .mts-menu-etc {margin-top:4px !important;}
+
+
+
+.mts-pop .pop-close {width:56px !important;height:38px !important;}
+.mts-pop .pop-prev {width:56px !important;height:38px !important;}
+.mts-pop.basic {top:56px !important;}
+
+.mts-textarea .icon-full {width:44px !important;height:44px !important;}
+
+.mts-popup-basic .title-bar {height:38px !important;line-height:38px !important;}
+
+.mts-pop-over {top:150px !important;}
+
+/* ÆË¾÷ÄÜÅÙÃ÷ ½ÃÀÛ */
+.mts-login {padding-top:38px !important;}
+.mts-login form {padding:0 10% !important;}
+
+.mts-login .mts-logo {top:-15px !important;}
+.mts-login .mts-logo > a {font-size:25px !important;}
+
+.mts-login .fld {height:50px !important;line-height:40px !important;background-position:15px center !important;background-size:15px auto !important;padding-left:41px !important;}
+.mts-login .input {line-height:40px !important;}
+
+.mts-login .fld .bt {margin-top:-15px !important;width:30px !important;height:30px !important;}
+
+.mts-login .fld .bt.view {margin-right:30px !important;}
+
+.mts-login .button {height:50px !important;}
+
+.mts-textarea article {max-height:200px !important;}
+
+.mts-definition > dt {background-position:left 14px !important;background-size:15px auto !important;padding-left:23px !important;}
+
+.mts-definition.label > dt,.mts-definition.label > dd {padding-left:30px !important;}
+.mts-definition.label .num {top:11px !important;}
+
+.mts-list-bullet {margin-left:23px !important;}
+
+.mts-section-title {background-position:left 14px !important;background-size:15px auto !important;padding-left:23px !important;}
+.mts-section-title .btn {top:8px !important;}
+.mts-section-title .btn > a {padding:5px 8px !important;margin-left:5px !important;;}
+.mts-section-title .btn > .mts-icon {padding-left:20px !important;;background-position:5px center !important;;background-size:12px auto !important;;}
+
+
+.mts-cs-process.emergency> li {min-height:140px !important;}
+.mts-cs-process.guide-bank li {min-height:182px !important;}
+
+.mts-popup-basic .popup-contents {top:50px !important;}
+.mts-popup-basic.tab .popup-contents {top:82px !important;}
+.mts-popup-basic.select .popup-contents {top:100px !important;}
+
+.mts-tel {background-size:20px auto !important;padding-left:35px !important;}
+.mts-tel.small {background-size:18px auto !important;padding-left:32px !important;}
+
+.mts-tab-menu > ul > li > a {padding:6px 0 !important;}
+
+.mts-select-menu {top:53px !important;}
+.mts-select-menu > i {height:38px !important;}
+.mts-select-menu > ul > li > a {padding:6px 15px !important;}
+
+.mts-pop-tb .input {height:38px !important;line-height:32px !important;}
+.mts-pop-tb caption {background-position:left 14px !important;background-size:15px auto !important;padding-left:23px !important;}
+.mts-pop-tb:nth-of-type(1) > caption {background-position-y:4px !important;}
+
+.mts-search label {width:80px !important;padding-right:20px !important;background-size:15px auto !important;}
+
+
+.mts-toggle-content dt {padding:5px 30px 5px 10px !important;}
+.mts-toggle-content dt:after {right:6px !important;top:4px !important;height:28px;width:30px;background-size:10px auto !important;}
+.mts-toggle-content.faq dt {padding-left:32px !important;background-position:12px 11px !important;background-size:12px auto !important;}
+
+.basic-btn .btn {padding:6px 15px !important;}
+.basic-btn .btn.mts-icon {padding-left:32px !important;;background-position:15px center !important;;background-size:15px auto !important;;}
+
+/* Ã¼Å©¹Ú½º */
+.mts-chk .check {width:38px !important;height:38px !important;}
+.mts-chk i {width:38px !important;height:38px !important;}
+
+/* ¶óµð¿À */
+.mts-rad {line-height:26px !important;}
+.mts-rad .radio {width:26px !important;height:26px !important;}
+.mts-rad i {width:26px !important;height:26px !important;}
+

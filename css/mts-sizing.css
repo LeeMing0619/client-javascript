@@ -1,0 +1,5 @@
+@charset "utf-8";
+
+body {line-height: 1.5em;font-size: 13px;font-weight:200;min-width:300px;}
+
+.mts-header .header-top  {height:46px;line-height:38px;}
