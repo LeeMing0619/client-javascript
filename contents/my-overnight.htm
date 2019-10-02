@@ -1,0 +1,45 @@
+<div class="mts-popup-basic tab">
+	<h3 class="title-bar">오버나잇</h3>
+	<input type="hidden" id="username" />
+		<section class="mts-scroll-wrapper">
+			<!-- 탭 섹션 시작 -->
+			<table class="mts-pop-tb">
+				<tr>
+					<td>
+						오버나잇 신청
+					</td>
+					<td><label class='mts-rad'><input type='radio' name='overnight' value='0' class='radio' id='overNightTrue'>설정<i></i></label></td>
+				</tr>
+				<tr>
+					<td>
+						오버나잇 해제
+					</td>
+					<td><label class='mts-rad'><input type='radio' name='overnight' value='0' class='radio' id='overNightFalse'>해제<i></i></label></td>
+				</tr>
+			</table>
+			<div class="mts-confirm" style="width:100%;display:flex">
+				<p class="btn" style="width:50%">
+					<button onclick="sendTrOverNight()" type="button" style="width:90%">변경신청</button>
+				</p>
+				<p class="btn" style="width:50%">
+					<button onclick="popClose()" type="button" style="width:90%">취소</button>
+				</p>
+			</div>
+			<br />
+			<table class="mts-pop-tb">
+				<tr>
+					<td>
+						KOSPI 선물 증거금
+					</td>
+					<td id="kospi"></td>
+				</tr>
+				<tr>
+					<td>
+						해외선물 증거금
+					</td>
+					<td id="oversea"></td>
+				</tr>
+			</table>
+			<!-- 탭 섹션 끝 -->
+		</section>
+</div>

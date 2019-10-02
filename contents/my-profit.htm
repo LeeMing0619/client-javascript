@@ -1,0 +1,193 @@
+<div class="mts-popup-basic tab">
+	<h3 class="title-bar">기간별손익</h3>
+	<nav class="mts-tab-menu">
+		<ul>
+			<li class="tab1 on"><a>해외선물</a></li>
+			<li class="tab2"><a>선물</a></li>
+			<li class="tab3"><a>야간선물</a></li>
+			<li class="tab4"><a>옵션</a></li>
+			<li class="tab5"><a>야간옵션</a></li>
+		</ul>
+	</nav>
+	<input type="hidden" id="username"/>
+	<div class="popup-contents">
+		<section class="mts-scroll-wrapper">
+			<!-- 탭 섹션 시작 -->
+			<article class="mts-tab-contents tab1 on">
+					<div class="mts-search">
+						기간선택
+						<label><input type="text" class="input" readonly value="2017-07-05" id="startDate1"></label> ~
+						<label><input type="text" class="input" readonly value="2017-07-05" id="endDate1"></label>
+						<a class="btn" onClick="profitSearch(1)">조회</a>
+					</div>
+					<table class="mts-pop-tb">
+						<colgroup>
+							<col width="80">
+							</col>
+						</colgroup>
+						<tr>
+							<th>총손익</th>
+							<td><label><input type="text" value="0" readonly class="input price" id="totSonik1"> 원</label></td>
+						</tr>
+						<tr>
+							<th>수수료</th>
+							<td><label><input type="text" value="0" readonly class="input price" id="charge1"> 원</label></td>
+						</tr>
+						<tr>
+							<th>순손익</th>
+							<td><label><input type="text" value="0" readonly class="input price" id="sonik1"> 원</label></td>
+						</tr>
+					</table>
+					<br/>
+					<ul class="mts-list-bullet">
+						<li>기간별손익은 최근 3개월까지 조회 가능합니다.</li>
+					</ul>
+
+			</article>
+			<!-- 탭 섹션 끝 -->
+
+			<!-- 탭 섹션 시작 -->
+			<article class="mts-tab-contents tab2">
+
+					<div class="mts-search">
+						기간선택
+						<label><input type="text" class="input" readonly value="2017-07-05" id="startDate2"></label> ~
+						<label><input type="text" class="input" readonly value="2017-07-05" id="endDate2"></label>
+						<a class="btn" onClick="profitSearch(2)">조회</a>
+					</div>
+					<table class="mts-pop-tb">
+						<colgroup>
+							<col width="80">
+							</col>
+						</colgroup>
+						<tr>
+							<th>총손익</th>
+							<td><label><input type="text" value="0" readonly class="input price" id="totSonik2"> 원</label></td>
+						</tr>
+						<tr>
+							<th>수수료</th>
+							<td><label><input type="text" value="0" readonly class="input price" id="charge2"> 원</label></td>
+						</tr>
+						<tr>
+							<th>순손익</th>
+							<td><label><input type="text" value="0" readonly class="input price" id="sonik2"> 원</label></td>
+						</tr>
+					</table>
+					<br/>
+					<ul class="mts-list-bullet">
+						<li>기간별손익은 최근 3개월까지 조회 가능합니다.</li>
+					</ul>
+
+			</article>
+			<!-- 탭 섹션 끝 -->
+
+			<!-- 탭 섹션 시작 -->
+			<article class="mts-tab-contents tab3">
+
+					<div class="mts-search">
+						기간선택
+						<label><input type="text" class="input" readonly value="2017-07-05" id="startDate3"></label> ~
+						<label><input type="text" class="input" readonly value="2017-07-05" id="endDate3"></label>
+						<a class="btn" onClick="profitSearch(3)">조회</a>
+					</div>
+					<table class="mts-pop-tb">
+						<colgroup>
+							<col width="80">
+							</col>
+						</colgroup>
+						<tr>
+							<th>총손익</th>
+							<td><label><input type="text" value="0" readonly class="input price" id="totSonik3"> 원</label></td>
+						</tr>
+						<tr>
+							<th>수수료</th>
+							<td><label><input type="text" value="0" readonly class="input price" id="charge3"> 원</label></td>
+						</tr>
+						<tr>
+							<th>순손익</th>
+							<td><label><input type="text" value="0" readonly class="input price" id="sonik3"> 원</label></td>
+						</tr>
+					</table>
+					<br/>
+					<ul class="mts-list-bullet">
+						<li>기간별손익은 최근 3개월까지 조회 가능합니다.</li>
+					</ul>
+
+			</article>
+			<!-- 탭 섹션 끝 -->
+
+			<!-- 탭 섹션 시작 -->
+			<article class="mts-tab-contents tab4">
+
+					<div class="mts-search">
+						기간선택
+						<label><input type="text" class="input" readonly value="2017-07-05" id="startDate4"></label> ~
+						<label><input type="text" class="input" readonly value="2017-07-05" id="endDate4"></label>
+						<a class="btn" onClick="profitSearch(4)">조회</a>
+					</div>
+					<table class="mts-pop-tb">
+						<colgroup>
+							<col width="80">
+							</col>
+						</colgroup>
+						<tr>
+							<th>총손익</th>
+							<td><label><input type="text" value="0" readonly class="input price" id="totSonik4"> 원</label></td>
+						</tr>
+						<tr>
+							<th>수수료</th>
+							<td><label><input type="text" value="0" readonly class="input price" id="charge4"> 원</label></td>
+						</tr>
+						<tr>
+							<th>순손익</th>
+							<td><label><input type="text" value="0" readonly class="input price" id="sonik4"> 원</label></td>
+						</tr>
+					</table>
+					<br/>
+					<ul class="mts-list-bullet">
+						<li>기간별손익은 최근 3개월까지 조회 가능합니다.</li>
+					</ul>
+
+			</article>
+			<!-- 탭 섹션 끝 -->
+
+			<!-- 탭 섹션 시작 -->
+			<article class="mts-tab-contents tab5">
+
+					<div class="mts-search">
+						기간선택
+						<label><input type="text" class="input" readonly value="2017-07-05" id="startDate5"></label> ~
+						<label><input type="text" class="input" readonly value="2017-07-05" id="endDate5"></label>
+						<a class="btn" onClick="profitSearch(5)">조회</a>
+					</div>
+					<table class="mts-pop-tb">
+						<colgroup>
+							<col width="80">
+							</col>
+						</colgroup>
+						<tr>
+							<th>총손익</th>
+							<td><label><input type="text" value="0" readonly class="input price" id="totSonik5"> 원</label></td>
+						</tr>
+						<tr>
+							<th>수수료</th>
+							<td><label><input type="text" value="0" readonly class="input price" id="charge5"> 원</label></td>
+						</tr>
+						<tr>
+							<th>순손익</th>
+							<td><label><input type="text" value="0" readonly class="input price" id="sonik5"> 원</label></td>
+						</tr>
+					</table>
+					<br/>
+					<ul class="mts-list-bullet">
+						<li>기간별손익은 최근 3개월까지 조회 가능합니다.</li>
+					</ul>
+
+			</article>
+			<!-- 탭 섹션 끝 -->
+
+
+
+		</section>
+	</div>
+</div>

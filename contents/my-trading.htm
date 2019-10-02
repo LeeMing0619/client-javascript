@@ -1,0 +1,315 @@
+<div class="mts-popup-basic tab">
+	<h3 class="title-bar">매매집계</h3>
+	<nav class="mts-tab-menu">
+		<ul>
+			<li class="tab1 on"><a>해외선물</a></li>
+			<li class="tab2"><a>선물</a></li>
+			<li class="tab3"><a>야간선물</a></li>
+			<li class="tab4"><a>옵션</a></li>
+			<li class="tab5"><a>야간옵션</a></li>
+		</ul>
+	</nav>
+	<input type="hidden" id="username"/>
+	<div class="popup-contents">
+		<section class="mts-scroll-wrapper">
+
+			<!-- 탭 섹션 시작 -->
+			<article class="mts-tab-contents tab1 on">
+
+				<div class="mts-search">
+					기간선택
+					<label><input type="text" class="input" readonly value="2017-07-05" id="startDate1"></label> ~
+					<label><input type="text" class="input" readonly value="2017-07-05" id="endDate1"></label>
+					<a class="btn" onclick="tradingSearch(1)">조회</a>
+				</div>
+				<div class="xscroll">
+					<table class="mts-pop-tb">
+						<tr>
+							<th>구분</th>
+							<th>약정금액</th>
+							<th>약정수량</th>
+							<th>매매손익</th>
+							<th>손익률</th>
+							<th>수수료</th>
+						</tr>
+						<tr class="buy">
+							<td>매수</td>
+							<td class="price" id="약정금액01">0</td>
+							<td class="price" id="약정수량01">0</td>
+							<td class="price" id="매매손익01">0</td>
+							<td class="price" id="손익률01">0</td>
+							<td class="price" id="수수료01">0</td>
+						</tr>
+						<tr class="sell">
+							<td>매도</td>
+							<td class="price" id="약정금액11">0</td>
+							<td class="price" id="약정수량11">0</td>
+							<td class="price" id="매매손익11">0</td>
+							<td class="price" id="손익률11">0</td>
+							<td class="price" id="수수료11">0</td>
+						</tr>
+						<tr>
+							<td>합계</td>
+							<td class="price" id="약정금액21">0</td>
+							<td class="price" id="약정수량21">0</td>
+							<td class="price" id="매매손익21">0</td>
+							<td class="price" id="손익률21">0</td>
+							<td class="price" id="수수료21">0</td>
+						</tr>
+					</table>
+				</div>
+				<br/>
+				<ul class="mts-list-bullet">
+					<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+				</ul>
+
+			</article>
+			<!-- 탭 섹션 끝 -->
+
+			<!-- 탭 섹션 시작 -->
+			<article class="mts-tab-contents tab2">
+
+				<div class="mts-search">
+					기간선택
+					<label><input type="text" class="input" readonly value="2017-07-05" id="startDate2"></label> ~
+					<label><input type="text" class="input" readonly value="2017-07-05" id="endDate2"></label>
+					<a class="btn" onclick="tradingSearch(2)">조회</a>
+				</div>
+				<div class="xscroll">
+					<table class="mts-pop-tb">
+						<tr>
+							<th>구분</th>
+							<th>약정금액</th>
+							<th>약정수량</th>
+							<th>매매손익</th>
+							<th>손익률</th>
+							<th>수수료</th>
+						</tr>
+						<tr class="buy">
+							<td>매수</td>
+							<td class="price" id="약정금액02">0</td>
+							<td class="price" id="약정수량02">0</td>
+							<td class="price" id="매매손익02">0</td>
+							<td class="price" id="손익률02">0</td>
+							<td class="price" id="수수료02">0</td>
+						</tr>
+						<tr class="sell">
+							<td>매도</td>
+							<td class="price" id="약정금액12">0</td>
+							<td class="price" id="약정수량12">0</td>
+							<td class="price" id="매매손익12">0</td>
+							<td class="price" id="손익률12">0</td>
+							<td class="price" id="수수료12">0</td>
+						</tr>
+						<tr>
+							<td>합계</td>
+							<td class="price" id="약정금액22">0</td>
+							<td class="price" id="약정수량22">0</td>
+							<td class="price" id="매매손익22">0</td>
+							<td class="price" id="손익률22">0</td>
+							<td class="price" id="수수료22">0</td>
+						</tr>
+					</table>
+				</div>
+				<br/>
+				<ul class="mts-list-bullet">
+					<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+				</ul>
+
+			</article>
+			<!-- 탭 섹션 끝 -->
+
+			<!-- 탭 섹션 시작 -->
+			<article class="mts-tab-contents tab3">
+
+				<div class="mts-search">
+					기간선택
+					<label><input type="text" class="input" readonly value="2017-07-05" id="startDate3"></label> ~
+					<label><input type="text" class="input" readonly value="2017-07-05" id="endDate3"></label>
+					<a class="btn" onclick="tradingSearch(3)">조회</a>
+				</div>
+				<div class="xscroll">
+					<table class="mts-pop-tb">
+						<tr>
+							<th>구분</th>
+							<th>약정금액</th>
+							<th>약정수량</th>
+							<th>매매손익</th>
+							<th>손익률</th>
+							<th>수수료</th>
+						</tr>
+						<tr class="buy">
+							<td>매수</td>
+							<td class="price" id="약정금액03">0</td>
+							<td class="price" id="약정수량03">0</td>
+							<td class="price" id="매매손익03">0</td>
+							<td class="price" id="손익률03">0</td>
+							<td class="price" id="수수료03">0</td>
+						</tr>
+						<tr class="sell">
+							<td>매도</td>
+							<td class="price" id="약정금액13">0</td>
+							<td class="price" id="약정수량13">0</td>
+							<td class="price" id="매매손익13">0</td>
+							<td class="price" id="손익률13">0</td>
+							<td class="price" id="수수료13">0</td>
+						</tr>
+						<tr>
+							<td>합계</td>
+							<td class="price" id="약정금액23">0</td>
+							<td class="price" id="약정수량23">0</td>
+							<td class="price" id="매매손익23">0</td>
+							<td class="price" id="손익률23">0</td>
+							<td class="price" id="수수료23">0</td>
+						</tr>
+					</table>
+				</div>
+				<br/>
+				<ul class="mts-list-bullet">
+					<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+				</ul>
+
+			</article>
+			<!-- 탭 섹션 끝 -->
+
+			<!-- 탭 섹션 시작 -->
+			<article class="mts-tab-contents tab4">
+
+				<div class="mts-search">
+					기간선택
+					<label><input type="text" class="input" readonly value="2017-07-05" id="startDate4"></label> ~
+					<label><input type="text" class="input" readonly value="2017-07-05" id="endDate4"></label>
+					<a class="btn" onclick="tradingSearch(4)">조회</a>
+				</div>
+				<div class="xscroll">
+					<table class="mts-pop-tb">
+						<tr>
+							<th>구분</th>
+							<th>약정금액</th>
+							<th>약정수량</th>
+							<th>매매손익</th>
+							<th>손익률</th>
+							<th>수수료</th>
+						</tr>
+						<tr class="buy">
+							<td>콜 매수</td>
+							<td class="price" id="약정금액04">0</td>
+							<td class="price" id="약정수량04">0</td>
+							<td class="price" id="매매손익04">0</td>
+							<td class="price" id="손익률04">0</td>
+							<td class="price" id="수수료04">0</td>
+						</tr>
+						<tr class="sell">
+							<td>콜 매도</td>
+							<td class="price" id="약정금액14">0</td>
+							<td class="price" id="약정수량14">0</td>
+							<td class="price" id="매매손익14">0</td>
+							<td class="price" id="손익률14">0</td>
+							<td class="price" id="수수료14">0</td>
+						</tr>
+						<tr class="buy">
+							<td>풋 매수</td>
+							<td class="price" id="약정금액24">0</td>
+							<td class="price" id="약정수량24">0</td>
+							<td class="price" id="매매손익24">0</td>
+							<td class="price" id="손익률24">0</td>
+							<td class="price" id="수수료24">0</td>
+						</tr>
+						<tr class="sell">
+							<td>풋 매도</td>
+							<td class="price" id="약정금액34">0</td>
+							<td class="price" id="약정수량34">0</td>
+							<td class="price" id="매매손익34">0</td>
+							<td class="price" id="손익률34">0</td>
+							<td class="price" id="수수료34">0</td>
+						</tr>
+						<tr>
+							<td>합계</td>
+							<td class="price" id="약정금액44">0</td>
+							<td class="price" id="약정수량44">0</td>
+							<td class="price" id="매매손익44">0</td>
+							<td class="price" id="손익률44">0</td>
+							<td class="price" id="수수료44">0</td>
+						</tr>
+					</table>
+				</div>
+				<br/>
+				<ul class="mts-list-bullet">
+					<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+				</ul>
+
+			</article>
+			<!-- 탭 섹션 끝 -->
+
+			<!-- 탭 섹션 시작 -->
+			<article class="mts-tab-contents tab5">
+
+				<div class="mts-search">
+					기간선택
+					<label><input type="text" class="input" readonly value="2017-07-05" id="startDate5"></label> ~
+					<label><input type="text" class="input" readonly value="2017-07-05" id="endDate5"></label>
+					<a class="btn" onclick="tradingSearch(5)">조회</a>
+				</div>
+				<div class="xscroll">
+					<table class="mts-pop-tb">
+						<tr>
+							<th>구분</th>
+							<th>약정금액</th>
+							<th>약정수량</th>
+							<th>매매손익</th>
+							<th>손익률</th>
+							<th>수수료</th>
+						</tr>
+						<tr class="buy">
+							<td>콜 매수</td>
+							<td class="price" id="약정금액05">0</td>
+							<td class="price" id="약정수량05">0</td>
+							<td class="price" id="매매손익05">0</td>
+							<td class="price" id="손익률05">0</td>
+							<td class="price" id="수수료05">0</td>
+						</tr>
+						<tr class="sell">
+							<td>콜 매도</td>
+							<td class="price" id="약정금액15">0</td>
+							<td class="price" id="약정수량15">0</td>
+							<td class="price" id="매매손익15">0</td>
+							<td class="price" id="손익률15">0</td>
+							<td class="price" id="수수료15">0</td>
+						</tr>
+						<tr class="buy">
+							<td>풋 매수</td>
+							<td class="price" id="약정금액25">0</td>
+							<td class="price" id="약정수량25">0</td>
+							<td class="price" id="매매손익25">0</td>
+							<td class="price" id="손익률25">0</td>
+							<td class="price" id="수수료25">0</td>
+						</tr>
+						<tr class="sell">
+							<td>풋 매도</td>
+							<td class="price" id="약정금액35">0</td>
+							<td class="price" id="약정수량35">0</td>
+							<td class="price" id="매매손익35">0</td>
+							<td class="price" id="손익률35">0</td>
+							<td class="price" id="수수료35">0</td>
+						</tr>
+						<tr>
+							<td>합계</td>
+							<td class="price" id="약정금액45">0</td>
+							<td class="price" id="약정수량45">0</td>
+							<td class="price" id="매매손익45">0</td>
+							<td class="price" id="손익률45">0</td>
+							<td class="price" id="수수료45">0</td>
+						</tr>
+					</table>
+				</div>
+				<br/>
+				<ul class="mts-list-bullet">
+					<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+				</ul>
+
+			</article>
+			<!-- 탭 섹션 끝 -->
+
+		</section>
+	</div>
+</div>

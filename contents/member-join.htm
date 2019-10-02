@@ -1,0 +1,122 @@
+
+<!-- saved from url=(0042)http://cocotr.com/contents/member-join.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><div class="mts-scroll-wrapper mts-login join">
+	<form>
+		<fieldset>
+			<legend>Member <strong>Join</strong></legend>
+			<label class="fld id">
+						<input type="text" placeholder="아이디(필수)" class="input" id="username" onblur="sendApiCheckid()" style="text-transform:lowercase" maxlength="30">
+						<span class="bt del">지우기</span>
+					</label>
+			<label class="fld pass">
+						<input type="password" placeholder="비밀번호(4자리 이상 필수)" class="input" id="password" maxlength="16">
+						<span class="bt view">비밀번호 보기</span>
+						<span class="bt del">지우기</span>
+					</label>
+			<label class="fld pass">
+						<input type="password" placeholder="비밀번호 확인(필수)" class="input" id="confirm" maxlength="16">
+						<span class="bt view">비밀번호 보기</span>
+						<span class="bt del">지우기</span>
+					</label>
+			<label class="fld mts-icon note">
+						<input type="text" placeholder="이름(필수)" class="input" id="name" maxlength="10">
+						<span class="bt del">지우기</span>
+					</label>
+			<label class="fld mts-icon cp">
+						<input type="number" placeholder="휴대폰(필수)" class="input" id="phone" maxlength="17">
+						<span class="bt del">지우기</span>
+					</label>
+			<label class="fld id">
+						<input type="text" placeholder="이메일(필수)" class="input" id="email" maxlength="40">
+						<span class="bt del">지우기</span>
+					</label>
+			<label class="fld mts-icon note">
+						<input type="text" placeholder="추천인" class="input" id="recommender" maxlength="30">
+						<span class="bt del">지우기</span>
+					</label>
+			<label class="fld mts-icon note">
+				<select class="input" id="bank">
+					<option value="미정">미정</option>
+					<option value="한국은행">한국은행</option>
+<option value="산업은행">산업은행</option>
+<option value="기업은행">기업은행</option>
+<option value="국민은행">국민은행</option>
+<option value="외환은행">외환은행</option>
+<option value="수협중앙회">수협중앙회</option>
+<option value="수출입은행">수출입은행</option>
+<option value="농협중앙회">농협중앙회</option>
+<option value="농협회원조합">농협회원조합</option>
+<option value="우리은행">우리은행</option>
+<option value="SC제일은행">SC제일은행</option>
+<option value="한국씨티은행">한국씨티은행</option>
+<option value="대구은행">대구은행</option>
+<option value="부산은행">부산은행</option>
+<option value="광주은행">광주은행</option>
+<option value="제주은행">제주은행</option>
+<option value="전북은행">전북은행</option>
+<option value="경남은행">경남은행</option>
+<option value="새마을금고연합회">새마을금고연합회</option>
+<option value="신협중앙회">신협중앙회</option>
+<option value="상호저축은행">상호저축은행</option>
+<option value="모건스탠리은행">모건스탠리은행</option>
+<option value="HSBC은행">HSBC은행</option>
+<option value="도이치은행">도이치은행</option>
+<option value="알비에스은행">알비에스은행</option>
+<option value="제이피모간체이스은행">제이피모간체이스은행</option>
+<option value="미즈호코퍼레이트은행">미즈호코퍼레이트은행</option>
+<option value="미쓰비시도쿄UFJ은행">미쓰비시도쿄UFJ은행</option>
+<option value="BOA은행">BOA은행</option>
+<option value="산림조합">산림조합</option>
+<option value="우체국">우체국</option>
+<option value="신용보증기금">신용보증기금</option>
+<option value="기술신용보증기금">기술신용보증기금</option>
+<option value="하나은행">하나은행</option>
+<option value="신한은행">신한은행</option>
+<option value="한국정책금융공사">한국정책금융공사</option>
+<option value="한국주택금융공사">한국주택금융공사</option>
+<option value="서울보증보험">서울보증보험</option>
+<option value="경찰청">경찰청</option>
+<option value="한국전자금융㈜">한국전자금융㈜</option>
+<option value="금융결제원">금융결제원</option>
+<option value="유안타증권">유안타증권</option>
+<option value="현대증권">현대증권</option>
+<option value="미래에셋증권">미래에셋증권</option>
+<option value="대우증권">대우증권</option>
+<option value="삼성증권">삼성증권</option>
+<option value="한국투자증권">한국투자증권</option>
+<option value="우리투자증권">우리투자증권</option>
+<option value="교보증권">교보증권</option>
+<option value="하이투자증권">하이투자증권</option>
+<option value="HMC투자증권">HMC투자증권</option>
+<option value="키움증권">키움증권</option>
+<option value="이트레이드증권">이트레이드증권</option>
+<option value="SK증권">SK증권</option>
+<option value="대신증권">대신증권</option>
+<option value="솔로몬투자증권">솔로몬투자증권</option>
+<option value="한화증권">한화증권</option>
+<option value="하나대투증권">하나대투증권</option>
+<option value="신한금융투자">신한금융투자</option>
+<option value="동부증권">동부증권</option>
+<option value="유진투자증권">유진투자증권</option>
+<option value="메리츠종합금융증권">메리츠종합금융증권</option>
+<option value="NH투자증권">NH투자증권</option>
+<option value="부극증권">부극증권</option>
+<option value="신영증권">신영증권</option>
+<option value="LIG투자증권">LIG투자증권</option>
+<option value="K뱅크">K뱅크</option>
+<option value="카카오뱅크">카카오뱅크</option>
+				</select>
+			</label>
+			<label class="fld mts-icon note">
+						<input type="text" placeholder="계좌번호" class="input" id="bankAccount">
+						<span class="bt del">지우기</span>
+					</label>
+			<label class="fld mts-icon note">
+						<input type="text" placeholder="계좌소유자명" class="input" id="bankOwner">
+						<span class="bt del">지우기</span>
+					</label>
+			<input type="button" value="회원가입" class="button" onclick="sendApiJoin()">
+		</fieldset>
+	</form>
+</div>
+</body></html>

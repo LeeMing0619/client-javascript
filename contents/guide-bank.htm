@@ -1,0 +1,249 @@
+		<div class="mts-popup-basic tab">
+			<h3 class="title-bar">입출금신청</h3>
+			<nav class="mts-tab-menu">
+				<ul class="col4">
+					<li class="tab1 on"><a>입금신청</a></li>
+					<li class="tab2"><a>출금신청</a></li>
+					<li class="tab3"><a>입금내역</a></li>
+					<li class="tab4"><a>출금내역</a></li>
+				</ul>
+			</nav>
+			<input type="hidden" id="username"/>
+			<div class="popup-contents">
+				<section class="mts-scroll-wrapper">
+
+					<!-- 탭 섹션 시작 -->
+					<article class="mts-tab-contents tab1 on">
+						<h3 class="mts-section-title">입금계좌 (인터넷뱅킹 또는 무통장입금)</h3>
+						<table class="mts-pop-tb">
+							<colgroup>
+								 <col width="80">
+								 <col>
+							 </colgroup>
+							<tr>
+								<th>은행명</th>
+								<td id="bank"></td>
+							</tr>
+							<tr>
+								<th>계좌번호</th>
+								<td id="bankAddr"></td>
+							</tr>
+							<tr>
+								<th>예금주명</th>
+								<td id="bankName"></td>
+							</tr>
+						</table>
+
+						<h3 class="mts-section-title">
+						입금신청
+						<span class="btn">
+							<a onclick="popOver('pop1');" class="mts-icon q">입출금방법</a>
+						</span>
+						</h3>
+						<table class="mts-pop-tb">
+							<colgroup>
+								 <col width="80">
+								 <col>
+							 </colgroup>
+							<tr>
+								<th>입금자명</th>
+								<td><label><input type="text" class="input" id="depositName"></label></td>
+							</tr>
+							<tr>
+								<th>입금액</th>
+								<td><label><input type="tel" class="input" id="depositAmount" onchange="getNumber(this);" onkeyup="getNumber(this);"> 원</label></td>
+							</tr>
+						</table>
+
+						<p class="basic-btn">
+							<input type="button" value="입금신청" class="btn on mts-icon cp" onClick="sendTrDeposit()" >
+							<a onclick="popClose()" class="btn">취소</a>
+						</p>
+						<ul class="mts-list-bullet">
+							<li>입금계좌로 송금하신 후 입금자명, 입금액을 기재하시고 입금신청 버튼을 눌러 주십시오</li>
+							<li>입금 신청 가능 시간 : 08:00 ~ 익일 05:00</li>
+							<li>입금 신청 불가 시간 : 토요일 오전 05:00 ~ 월요일 오전 08:00</li>
+							<li>입금 신청 처리 기간은 최장 5분 정도 지연될 수 있습니다.</li>
+							<li>입금 처리가 완료되면 입금하신 금액은 예탁금으로 충전됩니다.</li>
+						</ul>
+
+					</article>
+					<!-- 탭 섹션 끝 -->
+
+					<!-- 탭 섹션 시작 -->
+					<article class="mts-tab-contents tab2">
+						<h3 class="mts-section-title">예탁금 </h3>
+						<table class="mts-pop-tb">
+							<colgroup>
+								 <col width="80">
+								 <col>
+							 </colgroup>
+							<tr>
+								<th>예탁금</th>
+								<td id="userDeposit">0</td>
+							</tr>
+							<tr>
+								<th>대기 출금액</th>
+								<td><label><input type="text" class="input" id="withdrawing" readonly> 원</label></td>
+							</tr>
+						</table>
+
+						<h3 class="mts-section-title">
+						출금신청
+						<span class="btn">
+							<a onclick="popOver('pop1');" class="mts-icon q">입출금방법</a>
+						</span>
+						</h3>
+						<table class="mts-pop-tb">
+							<colgroup>
+								 <col width="80">
+								 <col>
+							 </colgroup>
+							<tr>
+								<td colspan="2">출금 신청 처리 시간은 최장 10분 정도 지연될 수 있습니다</td>
+							</tr>
+							<tr>
+								<th>은행명</th>
+								<td><label><input type="text" class="input" id="withdrawBank" readonly></label></td>
+							</tr>
+							<tr>
+								<th>계좌번호</th>
+								<td><label><input type="text" class="input" id="withdrawBankAddr" readonly></label></td>
+							</tr>
+							<tr>
+								<th>예금주명</th>
+								<td><label><input type="text" class="input" id="withdrawName" readonly></label></td>
+							</tr>
+							<tr>
+								<th>출금신청액</th>
+								<td><label><input type="tel" class="input" id="withdrawAmount" onchange="getNumber(this);" onkeyup="getNumber(this);"> 원</label></td>
+							</tr>
+							<tr>
+								<th>전달사항</th>
+								<td><label><input type="text" class="input" id="withdrawMemo"></label></td>
+							</tr>
+						</table>
+
+						<p class="basic-btn">
+							<input type="button" value="출금신청" class="btn red mts-icon cp" onClick="sendTrWithdraw()">
+							<a onclick="popClose()" class="btn">취소</a>
+						</p>
+						<ul class="mts-list-bullet">
+							<li>계좌번호를 등록 안하신분은 관리자에게 요청하여 주십시오.</li>
+							<li>출금 신청 가능 시간 : 08:00 ~ 23:30, 00:30 ~ 05:00</li>
+							<li>출금 신청 불가 시간 : 토요일 오전 05:00 ~ 월요일 오전 08:00</li>
+							<li>출금 가능 시간에 출금 신청을 해 주십시오.</li>
+						</ul>
+
+					</article>
+					<!-- 탭 섹션 끝 -->
+
+					<!-- 탭 섹션 시작 -->
+					<article class="mts-tab-contents tab3">
+						<h3 class="mts-section-title">입금내역 </h3>
+						<div class="mts-search">
+							기간선택
+							<label><input type="text" class="input" readonly id="startDate1"></label> ~
+							<label><input type="text" class="input" readonly id="endDate1"></label>
+							<a class="btn" onClick="bankingSearch(1)">조회</a>
+						</div>
+						<div class="xscroll">
+							<table class="mts-pop-tb" >
+								<thead>
+									<tr>
+										<th>요청시간</th>
+										<th>구분</th>
+										<th>요청금액</th>
+										<th>처리시간</th>
+										<th>처리금액</th>
+									</tr>
+								</thead>
+								<tbody id="datalist1">
+								</tbody>
+							</table>
+						</div>
+
+					</article>
+					<!-- 탭 섹션 끝 -->
+
+					<!-- 탭 섹션 시작 -->
+					<article class="mts-tab-contents tab4">
+						<h3 class="mts-section-title">출금내역 </h3>
+						<div class="mts-search">
+							기간선택
+							<label><input type="text" class="input" readonly id="startDate2"></label> ~
+							<label><input type="text" class="input" readonly id="endDate2"></label>
+							<a class="btn" onClick="bankingSearch(2)">조회</a>
+						</div>
+						<div class="xscroll">
+							<table class="mts-pop-tb">
+								<thead>
+									<tr>
+										<th>요청시간</th>
+										<th>구분</th>
+										<th>요청금액</th>
+										<th>처리시간</th>
+										<th>처리금액</th>
+									</tr>
+								</thead>
+								<tbody id="datalist2">
+								</tbody>
+							</table>
+						</div>
+
+					</article>
+					<!-- 탭 섹션 끝 -->
+
+				</section>
+			</div>
+		</div>
+
+
+		<!-- 팝업위 팝업-->
+		<div class="mts-pop-over pop1">
+			<div class="mts-popup-basic">
+			<h3 class="title-bar">입출금방법</h3>
+			<nav class="mts-over-tab-menu">
+				<ul class="col2">
+					<li class="tab1 on"><a>입금방법</a></li>
+					<li class="tab2"><a>출금방법</a></li>
+			</nav>
+			<section class="mts-scroll-wrapper">
+
+				<article class="mts-over-tab-contents tab1 on">
+					<h3 class="mts-section-title">입금방법</h3>
+					<ul class="mts-cs-process guide-bank">
+						<li>입금계좌에 원하시는 금액을 입금</li>
+						<li>입금신청 코너에서 입금자명 입금액을 기재한 후 입금신청 버튼 클릭</li>
+						<li>예탁금 반영 확인 후 매매시작</li>
+					</ul>
+					<br/>
+					<ul class="mts-list-bullet">
+						<li>입금 신청 가능 시간 : 08:30 ~ 익일 05:00</li>
+						<li>입금 신청 불가 시간 : 토요일 오전 05:00 ~ 월요일 오전 08:00</li>
+						<li>입금 신청 처리 기간은 최장 5분 정도 지연될 수 있습니다.</li>
+						<li>입금 처리가 완료되면 입금하신 금액은 예탁금으로 충전됩니다.</li>
+					</ul>
+				</article>
+
+				<article class="mts-over-tab-contents tab2">
+					<h3 class="mts-section-title">출금방법</h3>
+					<ul class="mts-cs-process guide-bank">
+						<li>입금계좌에 원하시는 금액을 입금</li>
+						<li>입금신청 코너에서 입금자명 입금액을 기재한 후 입금신청 버튼 클릭</li>
+						<li>예탁금 반영 확인 후 매매시작</li>
+					</ul>
+					<br/>
+					<ul class="mts-list-bullet">
+						<li>출금 신청 가능 시간 : 08:00 ~ 23:00, 00:30 ~ 05:00</li>
+						<li>출금 신청 불가 시간 : 토요일 오전 05:00 ~ 월요일 오전 08:00</li>
+						<li>출금 가능 시간에 출금 신청을 해 주십시오.</li>
+						<li>출금 신청 처리 시간은 최장 10분 정도 지연될 수 있습니다.</li>
+					</ul>
+				</article>
+
+
+				</section>
+			</div>
+		</div>
+		<!-- 팝업위 팝업-->

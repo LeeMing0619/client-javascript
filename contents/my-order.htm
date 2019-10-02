@@ -1,0 +1,593 @@
+		<div class="mts-popup-basic tab">
+			<h3 class="title-bar">거래내역</h3>
+			<nav class="mts-tab-menu">
+				<ul>
+					<li class="tab1 on"><a>해외선물</a>
+						<div class="mts-select-menu"><i></i>
+							<ul>
+								<li class="sel1 on"><a>주문내역</a></li>
+								<li class="sel2"><a>정정내역</a></li>
+								<li class="sel3"><a>취소내역</a></li>
+								<li class="sel4"><a>체결내역</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="tab2"><a>선물</a>
+						<div class="mts-select-menu"><i></i>
+							<ul>
+								<li class="sel1 on"><a>주문내역</a></li>
+								<li class="sel2"><a>정정내역</a></li>
+								<li class="sel3"><a>취소내역</a></li>
+								<li class="sel4"><a>체결내역</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="tab3"><a>야간선물</a>
+						<div class="mts-select-menu"><i></i>
+							<ul>
+								<li class="sel1 on"><a>주문내역</a></li>
+								<li class="sel2"><a>정정내역</a></li>
+								<li class="sel3"><a>취소내역</a></li>
+								<li class="sel4"><a>체결내역</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="tab4"><a>옵션</a>
+						<div class="mts-select-menu"><i></i>
+							<ul>
+								<li class="sel1 on"><a>주문내역</a></li>
+								<li class="sel2"><a>정정내역</a></li>
+								<li class="sel3"><a>취소내역</a></li>
+								<li class="sel4"><a>체결내역</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="tab5"><a>야간옵션</a>
+						<div class="mts-select-menu"><i></i>
+							<ul>
+								<li class="sel1 on"><a>주문내역</a></li>
+								<li class="sel2"><a>정정내역</a></li>
+								<li class="sel3"><a>취소내역</a></li>
+								<li class="sel4"><a>체결내역</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<input type="hidden" id="username"/>
+			<div class="popup-contents">
+				<section class="mts-scroll-wrapper">
+
+					<!-- 탭 섹션 시작 -->
+					<article class="mts-tab-contents tab1 on">
+						<div class="mts-select-contents sel1 on">
+							<div class="mts-search">
+								기간선택
+								<label><input type="text" class="input" readonly value="2017-07-05" id="startDate11"></label> ~
+								<label><input type="text" class="input" readonly value="2017-07-05" id="endDate11"></label>
+								<a class="btn" onClick="historySearch(1,1)">조회</a>
+							</div>
+							<div class="xscroll">
+								<table class="mts-pop-tb" style="text-align:center;" id="dataTable11">
+									<tr>
+										<th>주문No.</th>
+										<th>종목명</th>
+										<th>매매구분</th>
+										<th>유형</th>
+										<th>주문량</th>
+										<th>주문가</th>
+										<th>주문시간</th>
+									</tr>
+								</table>
+							</div>
+							<br/>
+							<ul class="mts-list-bullet">
+								<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+							</ul>
+						</div>
+						<div class="mts-select-contents sel2">
+							<div class="mts-search">
+								기간선택
+								<label><input type="text" class="input" readonly value="2017-07-05" id="startDate12"></label> ~
+								<label><input type="text" class="input" readonly value="2017-07-05" id="endDate12"></label>
+								<a class="btn" onClick="historySearch(1,2)">조회</a>
+							</div>
+							<div class="xscroll">
+								<table class="mts-pop-tb" style="text-align:center;" id="dataTable12">
+									<tr>
+										<th>주문No.</th>
+										<th>종목명</th>
+										<th>매매구분</th>
+										<th>유형</th>
+										<th>주문량</th>
+										<th>주문가</th>
+										<th>주문시간</th>
+									</tr>
+								</table>
+							</div>
+							<br/>
+							<ul class="mts-list-bullet">
+								<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+							</ul>
+						</div>
+						<div class="mts-select-contents sel3">
+							<div class="mts-search">
+								기간선택
+								<label><input type="text" class="input" readonly value="2017-07-05" id="startDate13"></label> ~
+								<label><input type="text" class="input" readonly value="2017-07-05" id="endDate13"></label>
+								<a class="btn" onClick="historySearch(1,3)">조회</a>
+							</div>
+							<div class="xscroll">
+								<table class="mts-pop-tb" style="text-align:center;" id="dataTable13">
+									<tr>
+										<th>주문No.</th>
+										<th>종목명</th>
+										<th>매매구분</th>
+										<th>유형</th>
+										<th>주문량</th>
+										<th>주문가</th>
+										<th>주문시간</th>
+									</tr>
+								</table>
+							</div>
+							<br/>
+							<ul class="mts-list-bullet">
+								<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+							</ul>
+						</div>
+						<div class="mts-select-contents sel4">
+							<div class="mts-search">
+								기간선택
+								<label><input type="text" class="input" readonly value="2017-07-05" id="startDate14"></label> ~
+								<label><input type="text" class="input" readonly value="2017-07-05" id="endDate14"></label>
+								<a class="btn" onClick="historySearch(1,4)">조회</a>
+							</div>
+							<div class="xscroll">
+								<table class="mts-pop-tb" style="text-align:center;" id="dataTable14">
+									<tr>
+										<th>주문No.</th>
+										<th>종목명</th>
+										<th>매매구분</th>
+										<th>유형</th>
+										<th>주문량</th>
+										<th>주문가</th>
+										<th>주문시간</th>
+									</tr>
+								</table>
+							</div>
+							<br/>
+							<ul class="mts-list-bullet">
+								<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+							</ul>
+						</div>
+					</article>
+					<!-- 탭 섹션 끝 -->
+
+
+					<!-- 탭 섹션 시작 -->
+					<article class="mts-tab-contents tab2">
+						<div class="mts-select-contents sel1 on">
+							<div class="mts-search">
+								기간선택
+								<label><input type="text" class="input" readonly value="2017-07-05" id="startDate21"></label> ~
+								<label><input type="text" class="input" readonly value="2017-07-05" id="endDate21"></label>
+								<a class="btn" onClick="historySearch(2,1)">조회</a>
+							</div>
+							<div class="xscroll">
+								<table class="mts-pop-tb" style="text-align:center;" id="dataTable21">
+									<tr>
+										<th>주문No.</th>
+										<th>종목명</th>
+										<th>매매구분</th>
+										<th>유형</th>
+										<th>주문량</th>
+										<th>주문가</th>
+										<th>주문시간</th>
+									</tr>
+								</table>
+							</div>
+							<br/>
+							<ul class="mts-list-bullet">
+								<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+							</ul>
+						</div>
+						<div class="mts-select-contents sel2">
+							<div class="mts-search">
+								기간선택
+								<label><input type="text" class="input" readonly value="2017-07-05" id="startDate22"></label> ~
+								<label><input type="text" class="input" readonly value="2017-07-05" id="endDate22"></label>
+								<a class="btn" onClick="historySearch(2,2)">조회</a>
+							</div>
+							<div class="xscroll">
+								<table class="mts-pop-tb" style="text-align:center;" id="dataTable22">
+									<tr>
+										<th>주문No.</th>
+										<th>종목명</th>
+										<th>매매구분</th>
+										<th>유형</th>
+										<th>주문량</th>
+										<th>주문가</th>
+										<th>주문시간</th>
+									</tr>
+								</table>
+							</div>
+							<br/>
+							<ul class="mts-list-bullet">
+								<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+							</ul>
+						</div>
+						<div class="mts-select-contents sel3">
+							<div class="mts-search">
+								기간선택
+								<label><input type="text" class="input" readonly value="2017-07-05" id="startDate23"></label> ~
+								<label><input type="text" class="input" readonly value="2017-07-05" id="endDate23"></label>
+								<a class="btn" onClick="historySearch(2,3)">조회</a>
+							</div>
+							<div class="xscroll">
+								<table class="mts-pop-tb" style="text-align:center;" id="dataTable23">
+									<tr>
+										<th>주문No.</th>
+										<th>종목명</th>
+										<th>매매구분</th>
+										<th>유형</th>
+										<th>주문량</th>
+										<th>주문가</th>
+										<th>주문시간</th>
+									</tr>
+								</table>
+							</div>
+							<br/>
+							<ul class="mts-list-bullet">
+								<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+							</ul>
+						</div>
+						<div class="mts-select-contents sel4">
+							<div class="mts-search">
+								기간선택
+								<label><input type="text" class="input" readonly value="2017-07-05" id="startDate24"></label> ~
+								<label><input type="text" class="input" readonly value="2017-07-05" id="endDate24"></label>
+								<a class="btn" onClick="historySearch(2,4)">조회</a>
+							</div>
+							<div class="xscroll">
+								<table class="mts-pop-tb" style="text-align:center;" id="dataTable14">
+									<tr>
+										<th>주문No.</th>
+										<th>종목명</th>
+										<th>매매구분</th>
+										<th>유형</th>
+										<th>주문량</th>
+										<th>주문가</th>
+										<th>주문시간</th>
+									</tr>
+								</table>
+							</div>
+							<br/>
+							<ul class="mts-list-bullet">
+								<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+							</ul>
+						</div>
+					</article>
+					<!-- 탭 섹션 끝 -->
+
+					<!-- 탭 섹션 시작 -->
+					<article class="mts-tab-contents tab3">
+						<div class="mts-select-contents sel1 on">
+							<div class="mts-search">
+								기간선택
+								<label><input type="text" class="input" readonly value="2017-07-05" id="startDate31"></label> ~
+								<label><input type="text" class="input" readonly value="2017-07-05" id="endDate31"></label>
+								<a class="btn" onClick="historySearch(3,1)">조회</a>
+							</div>
+							<div class="xscroll">
+								<table class="mts-pop-tb" style="text-align:center;" id="dataTable31">
+									<tr>
+										<th>주문No.</th>
+										<th>종목명</th>
+										<th>매매구분</th>
+										<th>유형</th>
+										<th>주문량</th>
+										<th>주문가</th>
+										<th>주문시간</th>
+									</tr>
+								</table>
+							</div>
+							<br/>
+							<ul class="mts-list-bullet">
+								<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+							</ul>
+						</div>
+						<div class="mts-select-contents sel2">
+							<div class="mts-search">
+								기간선택
+								<label><input type="text" class="input" readonly value="2017-07-05" id="startDate32"></label> ~
+								<label><input type="text" class="input" readonly value="2017-07-05" id="endDate32"></label>
+								<a class="btn" onClick="historySearch(3,2)">조회</a>
+							</div>
+							<div class="xscroll">
+								<table class="mts-pop-tb" style="text-align:center;" id="dataTable32">
+									<tr>
+										<th>주문No.</th>
+										<th>종목명</th>
+										<th>매매구분</th>
+										<th>유형</th>
+										<th>주문량</th>
+										<th>주문가</th>
+										<th>주문시간</th>
+									</tr>
+								</table>
+							</div>
+							<br/>
+							<ul class="mts-list-bullet">
+								<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+							</ul>
+						</div>
+						<div class="mts-select-contents sel3">
+							<div class="mts-search">
+								기간선택
+								<label><input type="text" class="input" readonly value="2017-07-05" id="startDate33"></label> ~
+								<label><input type="text" class="input" readonly value="2017-07-05" id="endDate33"></label>
+								<a class="btn" onClick="historySearch(3,3)">조회</a>
+							</div>
+							<div class="xscroll">
+								<table class="mts-pop-tb" style="text-align:center;" id="dataTable33">
+									<tr>
+										<th>주문No.</th>
+										<th>종목명</th>
+										<th>매매구분</th>
+										<th>유형</th>
+										<th>주문량</th>
+										<th>주문가</th>
+										<th>주문시간</th>
+									</tr>
+								</table>
+							</div>
+							<br/>
+							<ul class="mts-list-bullet">
+								<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+							</ul>
+						</div>
+						<div class="mts-select-contents sel4">
+							<div class="mts-search">
+								기간선택
+								<label><input type="text" class="input" readonly value="2017-07-05" id="startDate34"></label> ~
+								<label><input type="text" class="input" readonly value="2017-07-05" id="endDate34"></label>
+								<a class="btn" onClick="historySearch(3,4)">조회</a>
+							</div>
+							<div class="xscroll">
+								<table class="mts-pop-tb" style="text-align:center;" id="dataTable14">
+									<tr>
+										<th>주문No.</th>
+										<th>종목명</th>
+										<th>매매구분</th>
+										<th>유형</th>
+										<th>주문량</th>
+										<th>주문가</th>
+										<th>주문시간</th>
+									</tr>
+								</table>
+							</div>
+							<br/>
+							<ul class="mts-list-bullet">
+								<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+							</ul>
+						</div>
+				</article>
+					<!-- 탭 섹션 끝 -->
+
+					<!-- 탭 섹션 시작 -->
+					<article class="mts-tab-contents tab4">
+						<div class="mts-select-contents sel1 on">
+						<div class="mts-search">
+							기간선택
+							<label><input type="text" class="input" readonly value="2017-07-05" id="startDate41"></label> ~
+							<label><input type="text" class="input" readonly value="2017-07-05" id="endDate41"></label>
+							<a class="btn" onClick="historySearch(4,1)">조회</a>
+						</div>
+						<div class="xscroll">
+							<table class="mts-pop-tb" style="text-align:center;" id="dataTable41">
+								<tr>
+									<th>주문No.</th>
+									<th>종목명</th>
+									<th>매매구분</th>
+									<th>유형</th>
+									<th>주문량</th>
+									<th>주문가</th>
+									<th>주문시간</th>
+								</tr>
+							</table>
+						</div>
+						<br/>
+						<ul class="mts-list-bullet">
+							<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+						</ul>
+					</div>
+					<div class="mts-select-contents sel2">
+						<div class="mts-search">
+							기간선택
+							<label><input type="text" class="input" readonly value="2017-07-05" id="startDate42"></label> ~
+							<label><input type="text" class="input" readonly value="2017-07-05" id="endDate42"></label>
+							<a class="btn" onClick="historySearch(4,2)">조회</a>
+						</div>
+						<div class="xscroll">
+							<table class="mts-pop-tb" style="text-align:center;" id="dataTable12">
+								<tr>
+									<th>주문No.</th>
+									<th>종목명</th>
+									<th>매매구분</th>
+									<th>유형</th>
+									<th>주문량</th>
+									<th>주문가</th>
+									<th>주문시간</th>
+								</tr>
+							</table>
+						</div>
+						<br/>
+						<ul class="mts-list-bullet">
+							<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+						</ul>
+					</div>
+					<div class="mts-select-contents sel3">
+						<div class="mts-search">
+							기간선택
+							<label><input type="text" class="input" readonly value="2017-07-05" id="startDate43"></label> ~
+							<label><input type="text" class="input" readonly value="2017-07-05" id="endDate43"></label>
+							<a class="btn" onClick="historySearch(4,3)">조회</a>
+						</div>
+						<div class="xscroll">
+							<table class="mts-pop-tb" style="text-align:center;" id="dataTable43">
+								<tr>
+									<th>주문No.</th>
+									<th>종목명</th>
+									<th>매매구분</th>
+									<th>유형</th>
+									<th>주문량</th>
+									<th>주문가</th>
+									<th>주문시간</th>
+								</tr>
+							</table>
+						</div>
+						<br/>
+						<ul class="mts-list-bullet">
+							<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+						</ul>
+					</div>
+					<div class="mts-select-contents sel4">
+						<div class="mts-search">
+							기간선택
+							<label><input type="text" class="input" readonly value="2017-07-05" id="startDate44"></label> ~
+							<label><input type="text" class="input" readonly value="2017-07-05" id="endDate44"></label>
+							<a class="btn" onClick="historySearch(4,4)">조회</a>
+						</div>
+						<div class="xscroll">
+							<table class="mts-pop-tb" style="text-align:center;" id="dataTable44">
+								<tr>
+									<th>주문No.</th>
+									<th>종목명</th>
+									<th>매매구분</th>
+									<th>유형</th>
+									<th>주문량</th>
+									<th>주문가</th>
+									<th>주문시간</th>
+								</tr>
+							</table>
+						</div>
+						<br/>
+						<ul class="mts-list-bullet">
+							<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+						</ul>
+					</div>
+					</article>
+					<!-- 탭 섹션 끝 -->
+
+					<!-- 탭 섹션 시작 -->
+					<article class="mts-tab-contents tab5">
+						<div class="mts-select-contents sel1 on">
+							<div class="mts-search">
+								기간선택
+								<label><input type="text" class="input" readonly value="2017-07-05" id="startDate51"></label> ~
+								<label><input type="text" class="input" readonly value="2017-07-05" id="endDate51"></label>
+								<a class="btn" onClick="historySearch(5,1)">조회</a>
+							</div>
+							<div class="xscroll">
+								<table class="mts-pop-tb" style="text-align:center;" id="dataTable51">
+									<tr>
+										<th>주문No.</th>
+										<th>종목명</th>
+										<th>매매구분</th>
+										<th>유형</th>
+										<th>주문량</th>
+										<th>주문가</th>
+										<th>주문시간</th>
+									</tr>
+								</table>
+							</div>
+							<br/>
+							<ul class="mts-list-bullet">
+								<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+							</ul>
+						</div>
+						<div class="mts-select-contents sel2">
+							<div class="mts-search">
+								기간선택
+								<label><input type="text" class="input" readonly value="2017-07-05" id="startDate52"></label> ~
+								<label><input type="text" class="input" readonly value="2017-07-05" id="endDate52"></label>
+								<a class="btn" onClick="historySearch(5,2)">조회</a>
+							</div>
+							<div class="xscroll">
+								<table class="mts-pop-tb" style="text-align:center;" id="dataTable52">
+									<tr>
+										<th>주문No.</th>
+										<th>종목명</th>
+										<th>매매구분</th>
+										<th>유형</th>
+										<th>주문량</th>
+										<th>주문가</th>
+										<th>주문시간</th>
+									</tr>
+								</table>
+							</div>
+							<br/>
+							<ul class="mts-list-bullet">
+								<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+							</ul>
+						</div>
+						<div class="mts-select-contents sel3">
+							<div class="mts-search">
+								기간선택
+								<label><input type="text" class="input" readonly value="2017-07-05" id="startDate53"></label> ~
+								<label><input type="text" class="input" readonly value="2017-07-05" id="endDate53"></label>
+								<a class="btn" onClick="historySearch(5,3)">조회</a>
+							</div>
+							<div class="xscroll">
+								<table class="mts-pop-tb" style="text-align:center;" id="dataTable53">
+									<tr>
+										<th>주문No.</th>
+										<th>종목명</th>
+										<th>매매구분</th>
+										<th>유형</th>
+										<th>주문량</th>
+										<th>주문가</th>
+										<th>주문시간</th>
+									</tr>
+								</table>
+							</div>
+							<br/>
+							<ul class="mts-list-bullet">
+								<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+							</ul>
+						</div>
+						<div class="mts-select-contents sel4">
+							<div class="mts-search">
+								기간선택
+								<label><input type="text" class="input" readonly value="2017-07-05" id="startDate54"></label> ~
+								<label><input type="text" class="input" readonly value="2017-07-05" id="endDate54"></label>
+								<a class="btn" onClick="historySearch(5,4)">조회</a>
+							</div>
+							<div class="xscroll">
+								<table class="mts-pop-tb" style="text-align:center;" id="dataTable54">
+									<tr>
+										<th>주문No.</th>
+										<th>종목명</th>
+										<th>매매구분</th>
+										<th>유형</th>
+										<th>주문량</th>
+										<th>주문가</th>
+										<th>주문시간</th>
+									</tr>
+								</table>
+							</div>
+							<br/>
+							<ul class="mts-list-bullet">
+								<li>매매집계는 최근 1개월까지 조회 가능합니다.</li>
+							</ul>
+						</div>
+					</article>
+					<!-- 탭 섹션 끝 -->
+
+
+
+				</section>
+			</div>
+		</div>
+<script>
+</script>
